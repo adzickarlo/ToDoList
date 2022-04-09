@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #88BDBC;
+}
+
+.all-lists {
+  position: absolute;
+  top: 100px;
+  left: 600px;
+}
+
+.all-lists .list-div-title {
+  color: #FFFFFF;
+  font-family: 'Open sans', sans-serif;
+}
+
+.all-lists .lists {
+  margin-left: 20px;
+}
+
+.all-lists .lists .list-name {
+  color: #FFFFFF;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.all-lists .lists .list-name:hover {
+  cursor: pointer;
+}
+
+.all-lists .lists .active-list {
+  font-weight: 900;
+}
+
+.all-lists .new-list-input {
+  width: 120px;
+  height: 25px;
+  border: 1px solid #FFFFFF;
+  font-weight: 100;
+  border-radius: 2px;
+  padding-left: 5px;
+  margin-top: 10px;
+  font-family: 'Open sans', sans-serif;
+}
+
+.all-lists .btn-create-list {
+  width: 25px;
+  height: 25px;
+  background-color: #88BDBC;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 100;
+  border-radius: 50px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+  font-family: 'Open sans', sans-serif;
+}
+
+.all-lists .btn-create-list:hover {
+  cursor: pointer;
+}
+
+.todo-list {
+  border: 1px solid #FFFFFF;
+  background-color: #88BDBC;
+  width: 450px;
+  height: 705px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100px;
+  left: 800px;
+}
+
+.todo-list .todo-list-title {
+  color: #FFFFFF;
+  font-family: 'Open sans', sans-serif;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 225px;
+}
+
+.todo-list .task-form {
+  position: absolute;
+  top: 5px;
+  left: 260px;
+}
+
+.todo-list .task-form .new-task-input {
+  width: 120px;
+  height: 25px;
+  border: 1px solid #FFFFFF;
+  font-weight: 100;
+  border-radius: 2px;
+  padding-left: 5px;
+  margin-top: 10px;
+  font-family: 'Open sans', sans-serif;
+}
+
+.todo-list .task-form .btn-create-task {
+  width: 25px;
+  height: 25px;
+  background-color: #88BDBC;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 100;
+  border-radius: 50px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+  font-family: 'Open sans', sans-serif;
+}
+
+.todo-list .task-form .btn-create-task:hover {
+  cursor: pointer;
+}
+
+.todo-list .todo-list-title-line {
+  width: 90%;
+  margin-left: 20px;
+}
+
+.todo-list .delete-list-button {
+  background-color: #88BDBC;
+  border: 1px solid #88BDBC;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-family: 'Open sans', sans-serif;
+  position: absolute;
+  top: 693px;
+  left: 290px;
+}
+
+.todo-list .delete-list-button:hover {
+  cursor: pointer;
+}
+
+.todo-list .delete-task-button {
+  position: absolute;
+  top: 693px;
+  left: 90px;
+  background-color: #88BDBC;
+  border: 1px solid #88BDBC;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-family: 'Open sans', sans-serif;
+}
+
+.todo-list .delete-task-button:hover {
+  cursor: pointer;
+}
+
+.task {
+  color: #FFFFFF;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+  width: 365px;
+  height: 20px;
+  margin-left: 40px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.task .task-checkbox:hover {
+  cursor: pointer;
+}
+
+.task .task-label:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,180 @@
+@import 'variables.scss';
+
+@mixin listAndTaskInput(){
+    width: 120px;
+    height: 25px;
+    border: 1px solid $white-color;
+    font-weight: map-get($font-weights, 'light');
+    border-radius: 2px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+@mixin listAndTaskButtons(){
+    width: 25px;
+    height: 25px;
+    background-color: $primary-color;
+    border: 1px solid $white-color;
+    color: $white-color;
+    font-weight: map-get($font-weights, 'light');
+    border-radius: 50px;
+    padding-bottom: 2px;
+    margin-left: 10px;
+}
+
+@mixin font-family(){
+    font-family: 'Open sans', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+}
+
+.all-lists {
+    position: absolute;
+    top: 100px;
+    left: 600px;
+
+    & .list-div-title {
+        color: $white-color;
+        @include font-family();
+    }
+
+    & .lists {
+        margin-left: 20px;
+
+        & .list-name {
+            color: $white-color;
+            @include font-family();
+            font-weight: map-get($font-weights, 'light');
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        & .active-list {
+            font-weight: map-get($font-weights, 'bold');
+        }
+    }
+
+    & .new-list-input {
+        @include listAndTaskInput();
+        @include font-family();
+    }
+
+    & .btn-create-list {
+        @include listAndTaskButtons();
+        @include font-family();
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.todo-list {
+    border: 1px solid $white-color;
+    background-color: $primary-color;
+    width: 450px;
+    height: 705px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+
+    & .todo-list-title {
+        color: $white-color;
+        @include font-family();
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 225px;
+    }
+
+    & .task-form {
+        position: absolute;
+        top: 5px;
+        left: 260px;
+
+        & .new-task-input {
+            @include listAndTaskInput();
+            @include font-family();
+        }
+
+        & .btn-create-task {
+            @include listAndTaskButtons();
+            @include font-family();
+    
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    & .todo-list-title-line {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    & .delete-list-button {
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        color: $white-color;
+        font-weight: map-get($font-weights, 'bold');
+        @include font-family();
+        position: absolute;
+        top: 693px;
+        left: 290px;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & .delete-task-button {
+        position: absolute;
+        top: 693px;
+        left: 90px;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        color: $white-color;
+        font-weight: map-get($font-weights, 'bold');
+        @include font-family();
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.task {
+    color: $white-color;
+    @include font-family();
+    font-size: 1em;
+    width: 365px;
+    height: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+
+    & .task-checkbox {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & .task-label {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
